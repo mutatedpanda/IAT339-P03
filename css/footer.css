@@ -1,0 +1,25 @@
+footer{
+    color: gray;
+    margin: -3rem;
+    margin-top: 5rem;
+    padding: 0 3rem;
+    padding-bottom: 1rem;
+}
+
+.div3{
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, white, gray, white);
+    border-image-slice: 1;
+}
+
+.copyright{
+    text-align: center;
+    display: block;
+}
+
+.contact_p{
+    padding-top: 1rem;
+     padding-left: 3rem;
+    padding-bottom: 0;
+    margin-block-end: 0;
+}

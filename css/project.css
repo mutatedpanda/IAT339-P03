@@ -1,0 +1,80 @@
+h2{
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.flex-container div{
+    width: 50%;
+}
+
+.div1, .div4, .div5, .div8, .div9{
+}
+
+.p_img{
+    width: 100%;
+}
+
+@media (max-width: 50rem){
+    body{
+        padding: 0;
+    }
+    
+    h1{
+        padding-top: 5rem;
+    }
+
+    .flex-container div{
+        width: 100%;
+    }
+
+    .div1{
+        order: 1;
+    }
+
+    .div2{
+        order: 2;
+    }
+
+    .div3{
+        order: 4;
+    }
+
+    .div4{
+        order: 3;
+    }
+
+    .div5{
+        order: 5;
+    }
+
+    .div6{
+        order: 6;
+    }
+
+    .div7{
+        order: 8;
+    }
+
+    .div8{
+        order: 7;
+    }
+
+    .div9{
+        order: 9;
+    }
+
+    .div10{
+        order: 10;
+    }
+

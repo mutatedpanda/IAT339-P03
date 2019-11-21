@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+}
+
+.div1{
+    background: url("img/bg.jpg");
+    background-size: cover;
+    margin-top: -1.5rem;
+/*    border-bottom-right-radius:  10%; 
+    border-bottom-left-radius:  10%; */
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    background-color: transparent;
+    box-shadow: none;    
+    padding-top: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h1{
+    color: #faf8f6;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 10px black;
+    position: absolute;
+    z-index: 0;
+}
+
+.div2{
+    background-color: white;
+    padding: 3rem;
+    height: 100vh;
+    z-index: 2;
+}

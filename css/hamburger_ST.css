@@ -1,0 +1,64 @@
+nav label, nav #hamburger{
+  display: none;
+  font-size: 40px;
+  color: #faf8f6;
+}
+
+.menu{
+    display: inline;
+}
+
+.logo{
+    display: inline;
+    width: 1.5rem;
+    float: left;
+    margin-left: 1rem; 
+}
+
+@media (max-width: 65rem){
+  header{
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: .7rem;
+  }
+
+  .logo{
+    width: 3rem;
+    float: none;
+    margin: auto;
+    margin-left: -1rem;
+    position: fixed;
+  }
+  
+  nav label{
+    display: inline;
+    float: left;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    padding-bottom:0; 
+  }
+
+  nav .navlink{
+    display: block;
+    padding: 1rem 3rem;
+    margin-left: 0;
+  }
+
+  nav .navlink:hover{
+    background-color: rgba(100, 100, 100, .3);
+  }
+
+  .menu{
+    display: none;
+    text-align: left;
+  }
+
+  nav #hamburger{
+    display: none;
+  }
+
+  nav #hamburger:checked ~ .menu{
+    display: block;
+    padding-top: 4.5rem;
+  }
+}

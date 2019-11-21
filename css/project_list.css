@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip{
+    padding: 2rem;
+}
+
+.flip, .imglink, .flip-inner, .flip-front, .flip-back{
+    border-radius: 50%;
+}
