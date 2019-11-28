@@ -1,4 +1,4 @@
-.flex-container {
+.flex-container2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -10,6 +10,14 @@
     padding: 2rem;
 }
 
-.flip, .imglink, .flip-inner, .flip-front, .flip-back{
+.flip, .imglink, .flip-inner, .flip-front, .flip-back1, .flip-back2{
     border-radius: 50%;
+} 
+
+.flip-front{
+    background-color: white;
+}
+
+.flex-container2 p{
+    display: block;
 }

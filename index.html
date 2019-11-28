@@ -10,6 +10,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hamburger_ST.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
+    <link href="css/project_list.css" rel="stylesheet">
 
   </head>
 
@@ -24,7 +25,6 @@
                 <a href="#text_elements" class="navlink">Text Elements</a>
                 <a href="#combined_elements" class="navlink">Combined Elements</a>
                 <a href="#templates" class="navlink">Templates</a>
-                <a href="#citations" class="navlink">Citations</a>
             </div>
         </nav>
     </header>
@@ -38,11 +38,11 @@
       <section class="element">
         <h3>In-text link</h3>
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>.intext</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;p&gt;This is an example of a in-text &lt;a href="http://www.google.ca" class="intext"&gt;link&lt;/a&gt;.&lt;/p&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -55,11 +55,11 @@
         <h3>Navigation Link</h3>
 
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>.navlink</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;a class="navlink" href="#"&gt;Default Navlink&lt;/a&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -73,11 +73,11 @@
         <h3>Submit/Reset Buttons</h3>
 
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>.button</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;button class="button"&gt;Default Button&lt;/button&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -85,36 +85,29 @@
         
       </section>
 
-
-      <section class="element">
-
-        <h3>Text Input Field with Label</h3>
-
-        <h4>CSS selector:</h4>
-        <p></p>
-
-        <h4>Sample code:</h4>
-        <code>
-            <p></p>
-        </code>
-
-        <h4>Rendered element:</h4>
-        <label for="input">This is a label for the input</label>
-        <input class="input_text" id="input" type="text">
-        
-      </section>
-
-
       <section class="element">
 
         <h3>Image as a Link</h3>
         
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>.flip, .flip-inner, .flip-front, .flip-back1, .imglink</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;div class="flip"&gt;</p>
+            <p>&lt;a href="https://www.google.ca"&gt;</p>
+            <p>&lt;div class="flip-inner"&gt;</p>
+            <p>&lt;div class="flip-front"&gt;</p>
+            <p>&lt;img src="css/img/cat.png" alt="the image couldn't load, but it was a cute cat" class="imglink"&gt;</p>
+            <p>&lt;/div&gt;</p>
+            <p>&lt;div class="flip-back1"&gt;</p>
+            <p>&lt;h3>cats&lt;/h3&gt;</p>
+            <p>&lt;p>info here...&lt;/p&gt;</p>
+            <p>&lt;p>more info here...&lt;/p&gt;</p>
+            <p>&lt;/div&gt;</p>
+            <p>&lt;/div&gt;</p>
+            <p>&lt;/a&gt;</p>
+            <p>&lt;/div&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -124,7 +117,7 @@
                     <div class="flip-front">
                         <img src="css/img/cat.png" alt="the image couldn't load, but it was a cute cat" class="imglink">
                     </div>
-                    <div class="flip-back">
+                    <div class="flip-back1">
                         <h3>cats</h3> 
                         <p>info here...</p> 
                         <p>more info here...</p>
@@ -150,11 +143,14 @@
         <h3>Headings</h3>
 
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>h1, h2, h3, h4</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;h1&gt;Heading 1&lt;/h1&gt;</p>
+            <p>&lt;h2&gt;Heading 2&lt;/h2&gt;</p>
+            <p>&lt;h3&gt;Heading 3&lt;/h3&gt;</p>
+            <p>&lt;h4&gt;Heading 4&lt;/h4&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -170,11 +166,18 @@
         <h3>Paragraphs</h3>
 
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>.para</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;p class="para"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap 
+            into electronic typesetting, remaining essentially unchanged. It was 
+            popularised in the 1960s with the release of Letraset sheets containing Lorem 
+            Ipsum passages, and more recently with desktop publishing software like Aldus 
+            PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -194,11 +197,15 @@
         <h3>Numbered Lists</h3>
 
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>ol, li</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;ol&gt;</p>
+            <p>&lt;li>one&lt;/li&gt;</p>
+            <p>&lt;li>two&lt;/li&gt;</p>
+            <p>&lt;li>three&lt;li&gt;</p>
+            <p>&lt;/ol&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -224,11 +231,17 @@
         <h3>Main Navigation</h3>
 
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>nav, .navlink, .example</p>
 
         <h4>Sample code:</h4>
         <code>
-            <p></p>
+            <p>&lt;div class="example"&gt;</p>
+            <p>&lt;nav&gt;</p>
+            <p>&lt;a href="#" class="navlink">Home&lt;/a&gt;</p>
+            <p>&lt;a href="#" class="navlink">About&lt;/a&gt;</p>
+            <p>&lt;a href="#" class="navlink">Works&lt;/a&gt;</p>
+            <p>&lt;/nav&gt;</p>
+            <p>&lt;/div&gt;</p>
         </code>
 
         <h4>Rendered element:</h4>
@@ -266,27 +279,19 @@
     <!-- // TEMPLATES SECTION -->
 
 
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>https://www.vecteezy.com/vector-art/213400-free-vector-black-abstract-background-with-triangles</li>
-        <li>https://www.dafont.com/roboto.font</li>
-        <li>https://freefontsdownload.net/free-souvenirregular-font-96580.htm</li>
-        <li>https://thewellnessbusinesshub.com/tech-tools/google-drive-logo/</li>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-
-
     <footer>
-        <div class="div3">
-            <p class="contact_p">Email: mcly97@gmail.com</p>
-            <p class="contact_p">Phone: (778)-987-8026</p>
-            <p class="copyright">&copy; 2019 - Melissa Ly</p>
+        <div class="footer">
+            <div class="left">
+                <p class="contact_p">Email: mcly97@gmail.com</p>
+                <p class="contact_p">Phone: (778)-987-8026</p>
+            </div>
+            <div class="right">
+                <p class="contact_p">Link to <a href="https://github.com/mutatedpanda/IAT339-P03" class="intext">GitHub</a></p>
+                <p class="contact_p">Link to <a href="citations.html" class="intext">Citations</a></p>
+            </div>
+            <div class="middle">
+                <p class="copyright">&copy; 2019 - Melissa Ly</p>
+            </div>
         </div> 
     </footer>
 

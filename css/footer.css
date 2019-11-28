@@ -1,15 +1,19 @@
 footer{
     color: gray;
     margin: -3rem;
-    margin-top: 5rem;
+    margin-top: 0;
     padding: 0 3rem;
     padding-bottom: 1rem;
 }
 
-.div3{
+.footer{
     border-top: 2px solid;
     border-image: linear-gradient(to right, white, gray, white);
     border-image-slice: 1;
+}
+
+.footer .intext{
+    padding-right: 3rem; 
 }
 
 .copyright{
@@ -17,9 +21,31 @@ footer{
     display: block;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.middle{
+    margin-top: 5rem;
+}
+
 .contact_p{
     padding-top: 1rem;
      padding-left: 3rem;
     padding-bottom: 0;
     margin-block-end: 0;
+}
+
+@media (max-width: 64rem){
+    .footer .contact_p{
+        display: block;
+    }
+    
+    .middle{
+        margin-top: 8rem;
+    }
 }

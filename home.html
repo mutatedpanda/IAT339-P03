@@ -10,6 +10,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <link href="css/hamburger.css" rel="stylesheet">
+    <link href="css/bio.css" rel="stylesheet">
+    <link href="css/project_list.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
 
   </head>
@@ -17,27 +19,97 @@
   <body>
     <div class="div1">
         <header>
+          <a href="home.html"><img src="css/img/logo.png" class="logo" alt="LOGO"></a>
           <nav>
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger"/>
             <div class="menu"> 
-                <a href="bio.html" class="navlink">About</a>
-                <a href="projects.html" class="navlink">Works</a>
+                <a href="#bio" class="navlink">About</a>
+                <a href="#works" class="navlink">Works</a>
                 <a href="index.html" class="navlink">Style Guide</a>
             </div>
           </nav>
         </header>
+
+        <h1>Melissa Ly</h1>
     </div>
     
-    <h1>Melissa Ly</h1>
+    <div class="div2" id="bio">
+        <h2>About</h2>
 
-   
+        <div class="flex-container">
+            <div class="div2a">
+                <img src="css/img/me.png" class="about_img">
+            </div>
+            <div class="div2b">
+                <div class="words">
+                    <p class="para">
+                        I am a third-year student at Simon Fraser University (SFU), who is enrolled in the 
+                        Interactive Arts and Technology program (IAT), in Vancouver B.C. I am interested in 
+                        the development and design of a website, as well as User Experience (UX) Design. As 
+                        someone who is interested in Website Design and UX Design, not only do I enjoy 
+                        creating new, different, unique designs, but also the coding aspect to it. My goal 
+                        when designing a website is to allow the users to comfortably get around the website 
+                        while also providing a unique experience. As I continue on pursuing this career path, 
+                        I hope to further develop my visual design skills and analytical skills. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div3" id="works">
+        <h2>Works</h2>
+
+        <div class="flex-container2">
+            <div class="div3a">
+                <div class="flip">
+                    <a href="p1.html">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <img src="css/img/p1a.png" alt="titlescreen of my mobile application" class="imglink">
+                            </div>
+                            <div class="flip-back1">
+                                <h3>Fallen</h3> 
+                                <p>mobile application</p> 
+                                <p>individual project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="div3b">
+                <div class="flip">
+                    <a href="p2.html">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <img src="css/img/p2a.png" alt="home page of my team's website" class="imglink">
+                            </div>
+                            <div class="flip-back2">
+                                <h3>SRKW</h3> 
+                                <p>website</p> 
+                                <p>team project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <div class="div3">
-            <p class="contact_p">Email: mcly97@gmail.com</p>
-            <p class="contact_p">Phone: (778)-987-8026</p>
-            <p class="copyright">&copy; 2019 - Melissa Ly</p>
+        <div class="footer">
+            <div class="left">
+                <p class="contact_p">Email: mcly97@gmail.com</p>
+                <p class="contact_p">Phone: (778)-987-8026</p>
+            </div>
+            <div class="right">
+                <p class="contact_p">Link to <a href="https://github.com/mutatedpanda/IAT339-P03" class="intext">GitHub</a></p>
+                <p class="contact_p">Link to <a href="citations.html" class="intext">Citations</a></p>
+            </div>
+            <div class="middle">
+                <p class="copyright">&copy; 2019 - Melissa Ly</p>
+            </div>
         </div> 
     </footer>
 

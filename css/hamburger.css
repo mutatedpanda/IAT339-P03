@@ -1,7 +1,8 @@
 nav label, nav #hamburger{
   display: none;
-  font-size: 40px;
+  font-size: 45px;
   color: #faf8f6;
+  line-height: 1;
 }
 
 .menu{
@@ -16,23 +17,35 @@ nav label, nav #hamburger{
     margin-left: 1rem; 
 }
 
+.back{
+    color: #faf8f6;
+    text-transform: uppercase;
+    float: right;
+    text-align: left;
+    padding-right: 3.5rem;
+}
+
 @media (max-width: 35rem){
   header{
     text-align: center;
     padding-left: 0;
-    padding-bottom: .7rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: fixed;
+    background-color: black;
   }
 
-  body{
-      
+  .back{
+      float: left;
+      padding-left: 2rem;
+      padding-top: .7rem;
   }
 
   .logo{
     width: 3rem;
-    float: none;
-    margin: auto;
+    float: right;
+    margin-right: 1.7rem;
     margin-left: -1rem;
-    position: fixed;
   }
   
   nav label{

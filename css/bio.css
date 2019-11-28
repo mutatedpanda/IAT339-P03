@@ -12,11 +12,13 @@ CLASSES
 */
 .about_img{
     width: 100%;
+    padding-top: 1.5rem;
 }
 
 .para{
-    padding: 2rem;
-    width: 91.5%;
+    padding-left: 3rem;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .flex-container {
@@ -26,26 +28,53 @@ CLASSES
 }
 
 .flex-container div{
-    width: 50%;
+    width: 47%;
 }
 /*
 CLASSES END
 */
 
 @media (max-width: 57rem){
+    .flex-container .words{
+        top:50%;
+        transform: translate( 0, 0);
+    }
+
+    .div2, .div3{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
     .flex-container div{
         width: 100%;
     }
 
-    .div1{
-        order: 1;
+    .about_img{
+        width: 70%;
     }
 
-    .div2{
+    .para{
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    .div2a{
+        order: 1;
+        text-align: center;
+    }
+
+    .div2b{
         order: 2;
     }
+}
 
-    .div3{
-        order: 3;
+@media (max-width: 37rem){
+    .div2, .div3{
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }

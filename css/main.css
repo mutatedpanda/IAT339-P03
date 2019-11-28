@@ -18,6 +18,10 @@ nav{
     font-family: RobotoM;
 }
 
+code p{
+    display: block;
+}
+
 
 /*
 FONTS
@@ -36,6 +40,13 @@ FONTS
     font-style: normal;
 }
 
+@font-face {
+    font-family: Existence;
+    src: url('fonts/existence-light-webfont.woff2') format('woff2'),
+         url('fonts/existence-light-webfont.woff') format('woff');
+    font-style: normal;
+}
+
 h1{
     font-family: RobotoM;
     font-size: 70px;
@@ -44,11 +55,11 @@ h1{
 }
 
 h2{
-    font-family: RobotoM;
+    font-family: Existence;
     font-size: 31px;
     padding-top: 2rem;
     border-bottom: 2px solid;
-    border-image: linear-gradient(to right, #73716f, white);
+    border-image: linear-gradient(to right, #73716f, #ebe9e7);
     border-image-slice: 1;
     
 }
@@ -91,15 +102,10 @@ code {
     display: block;
 }
 
-label{
-    display: block;
-    font-size: 18px;
-    padding-bottom: .5rem;
-}
-
 li{
     font-size: 18px;
-    list-style-type: square;
+    list-style-type: none;
+    padding: .5rem;
 }
 
 li, p{
@@ -176,26 +182,27 @@ CLASSES
   transform: rotateX(180deg);
 }
 
-.flip-front, .flip-back {
+.flip-front, .flip-back1, .flip-back2 {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.flip-back {
-  background-color: #e0faff;
-  color: #a19f9e;;
+.flip-back1 {
+  background-color: white;
+  color: black;
   transform: rotateX(180deg);
 }
 
-.input_text{
-    width: 15rem;
-    font-size: 14px;
+.flip-back2 {
+  background-color: black;
+  color: white;
+  transform: rotateX(180deg);
 }
 
 .intext{
-    color: #a19f9e;
+    color: #b8b4b2;
 }
 
 .intext:hover, .intext:focus{
