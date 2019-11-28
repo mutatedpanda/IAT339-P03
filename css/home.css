@@ -11,6 +11,7 @@ body{
 
 .div1{
     background: url("img/bg.jpg");
+    background-color: black;
     background-size: cover;
     top: 0;
     width: 100%;
